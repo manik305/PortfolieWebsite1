@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typewriterElement = document.getElementById('typewriter-text');
     const titles = [
         "Inside Sales Manager",
-        "AI Automation Expert",
-        "AI Workflow Automation Expert",
-        "Full-Stack Vibe Coder"
+        "AI Automation Expert"
     ];
     let titleIndex = 0;
     let charIndex = 0;
