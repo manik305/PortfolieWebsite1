@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 1. Typewriter Animation for Hero Section ---
     const typewriterElement = document.getElementById('typewriter-text');
     const titles = [
-        "Inside Sales Manager",
-        "AI Automation Expert"
+        "Senior Marketing & Delivery Manager"
     ];
     let titleIndex = 0;
     let charIndex = 0;
@@ -155,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (currentHour < 17) greeting = "Good afternoon";
             else greeting = "Good evening";
 
-            const message = `${greeting} Manik! I visited your portfolio website and was extremely impressed with your hybrid Inside Sales & AI Automation background. I'd love to connect for a recruiter interview opportunity!`;
+            const message = `${greeting} Manik! I visited your portfolio website and was extremely impressed with your Senior Marketing & Delivery Manager and AI Solutions background. I'd love to connect for an opportunity!`;
             const waUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
             window.open(waUrl, '_blank');
         });
