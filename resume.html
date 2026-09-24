@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Official Resume of Dandothkar Manik Prabhu - Senior Marketing & Delivery Manager | AI Solutions, B2B Growth & Multi-Cloud Delivery Lead.">
-    <title>Dandothkar Manik Prabhu - Resume</title>
+        content="Official Resume of Manik Prabhu - Senior Software Engineer specializing in Autonomous Multi-Agent Systems, Enterprise LLM Architectures, GraphRAG, and Scalable Python Microservices.">
+    <title>Manik Prabhu - Senior Software Engineer Resume</title>
 
     <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +22,15 @@
             --primary-dark: #0369a1;
             --primary-light: #e0f2fe;
             --text-dark: #0f172a;
-            --text-muted: #475569;
+            --text-muted: #334155;
             --text-subtle: #64748b;
             --bg-body: #f8fafc;
             --bg-card: #ffffff;
             --border-color: #e2e8f0;
             --border-subtle: #f1f5f9;
-            --accent-green: #10b981;
+            --accent-cyan: #0284c7;
             --accent-purple: #7c3aed;
+            --accent-emerald: #10b981;
             --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
             --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
@@ -56,7 +57,7 @@
 
         /* Top Action Bar (hidden in print) */
         .resume-action-bar {
-            max-width: 900px;
+            max-width: 920px;
             margin: 0 auto 24px auto;
             display: flex;
             justify-content: space-between;
@@ -64,7 +65,7 @@
             flex-wrap: wrap;
             gap: 12px;
             background: #ffffff;
-            padding: 14px 22px;
+            padding: 14px 24px;
             border-radius: var(--radius-md);
             box-shadow: var(--shadow-md);
             border: 1px solid var(--border-color);
@@ -128,7 +129,7 @@
 
         /* Main Resume Paper Container */
         .resume-container {
-            max-width: 900px;
+            max-width: 920px;
             margin: 0 auto;
             background: var(--bg-card);
             border-radius: var(--radius-lg);
@@ -140,53 +141,48 @@
         /* Header / Profile Info */
         .resume-header {
             border-bottom: 2px solid var(--primary-light);
-            padding-bottom: 24px;
-            margin-bottom: 24px;
-        }
-
-        .header-title-block {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 16px;
+            padding-bottom: 22px;
+            margin-bottom: 22px;
+            text-align: center;
         }
 
         .candidate-name {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.1rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: var(--text-dark);
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             line-height: 1.15;
             text-transform: uppercase;
         }
 
         .candidate-title {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--primary);
             margin-top: 6px;
-            letter-spacing: -0.01em;
+            letter-spacing: 0.01em;
         }
 
-        /* Clickable Contact & Social Badges */
+        /* Contact & Social Badges */
         .contact-pills {
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 18px;
+            gap: 12px;
+            margin-top: 14px;
         }
 
         .contact-pill {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             background: var(--border-subtle);
             color: var(--text-dark);
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 100px;
-            font-size: 0.84rem;
+            font-size: 0.85rem;
             font-weight: 500;
             text-decoration: none;
             border: 1px solid var(--border-color);
@@ -195,7 +191,7 @@
 
         .contact-pill i {
             color: var(--primary);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .contact-pill:hover {
@@ -219,12 +215,12 @@
 
         /* Resume Sections */
         .resume-section {
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
 
         .section-heading {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.08rem;
+            font-size: 1.05rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.06em;
@@ -232,61 +228,45 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            padding-bottom: 6px;
+            padding-bottom: 5px;
             border-bottom: 1.5px solid var(--border-color);
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .section-heading i {
             color: var(--primary);
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .summary-text {
             color: var(--text-muted);
-            font-size: 0.93rem;
-            line-height: 1.65;
+            font-size: 0.92rem;
+            line-height: 1.6;
             text-align: justify;
         }
 
-        /* Segregated Skills Matrix */
+        /* Skills Matrix */
         .skills-grid-resume {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 12px;
+            gap: 8px;
         }
 
-        .skill-group {
-            background: #fdfdfd;
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-sm);
-            padding: 10px 14px;
-        }
-
-        .skill-group-title {
-            font-weight: 700;
+        .skill-item {
             font-size: 0.88rem;
-            color: var(--text-dark);
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .skill-group-title i {
-            color: var(--primary);
-            font-size: 0.82rem;
-        }
-
-        .skill-group-content {
-            font-size: 0.87rem;
-            color: var(--text-muted);
             line-height: 1.5;
+            color: var(--text-muted);
+            padding: 4px 0;
+        }
+
+        .skill-item strong {
+            color: var(--text-dark);
+            font-weight: 700;
         }
 
         /* Experience Item Styles */
         .exp-item {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             position: relative;
             padding-left: 18px;
             border-left: 2px solid var(--border-color);
@@ -300,7 +280,7 @@
             content: '';
             position: absolute;
             left: -6px;
-            top: 4px;
+            top: 5px;
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -319,7 +299,7 @@
         }
 
         .exp-role-company {
-            font-size: 0.98rem;
+            font-size: 0.96rem;
             font-weight: 700;
             color: var(--text-dark);
         }
@@ -327,7 +307,7 @@
         .exp-company-link {
             color: var(--primary);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
             gap: 4px;
@@ -340,24 +320,24 @@
         }
 
         .exp-date {
-            font-size: 0.84rem;
+            font-size: 0.82rem;
             font-weight: 600;
             color: var(--text-subtle);
             background: var(--border-subtle);
-            padding: 3px 10px;
+            padding: 2px 9px;
             border-radius: 100px;
         }
 
         .exp-bullets {
             list-style: none;
-            margin-top: 6px;
+            margin-top: 5px;
         }
 
         .exp-bullets li {
             position: relative;
             padding-left: 16px;
             margin-bottom: 5px;
-            font-size: 0.88rem;
+            font-size: 0.875rem;
             color: var(--text-muted);
             line-height: 1.5;
         }
@@ -378,11 +358,36 @@
             font-weight: 600;
         }
 
-        /* Education Grid */
+        /* Projects Section in Resume */
+        .project-item-resume {
+            margin-bottom: 12px;
+            padding-left: 16px;
+            position: relative;
+            border-left: 2px solid var(--primary-light);
+        }
+
+        .project-item-resume:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-name-resume {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 2px;
+        }
+
+        .project-desc-resume {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Education & Certs Grid */
         .edu-grid-resume {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 14px;
+            gap: 12px;
         }
 
         @media (max-width: 700px) {
@@ -395,18 +400,18 @@
             background: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: var(--radius-sm);
-            padding: 12px 16px;
+            padding: 10px 14px;
             border-left: 3px solid var(--primary);
         }
 
         .edu-degree {
-            font-size: 0.94rem;
+            font-size: 0.92rem;
             font-weight: 700;
             color: var(--text-dark);
         }
 
         .edu-inst {
-            font-size: 0.86rem;
+            font-size: 0.85rem;
             color: var(--primary-dark);
             font-weight: 500;
             margin-top: 2px;
@@ -415,8 +420,33 @@
         .edu-meta {
             font-size: 0.82rem;
             color: var(--text-subtle);
-            margin-top: 4px;
+            margin-top: 3px;
             font-weight: 600;
+        }
+
+        .cert-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .cert-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            background: #fdfdfd;
+            border: 1px solid var(--border-color);
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+        }
+
+        .cert-item i {
+            color: var(--accent-emerald);
+            font-size: 1rem;
         }
 
         /* Print Specific Media Query */
@@ -425,7 +455,7 @@
                 background: #ffffff !important;
                 padding: 0 !important;
                 color: #000000 !important;
-                font-size: 12.5px !important;
+                font-size: 12px !important;
             }
 
             .resume-action-bar {
@@ -454,56 +484,72 @@
                 border: 1px solid #cbd5e1 !important;
                 background: #f8fafc !important;
                 color: #000000 !important;
-                padding: 3px 8px !important;
-                font-size: 0.78rem !important;
+                padding: 2px 7px !important;
+                font-size: 0.76rem !important;
             }
 
             .section-heading {
-                font-size: 0.95rem !important;
-                margin-bottom: 8px !important;
+                font-size: 0.92rem !important;
+                margin-bottom: 6px !important;
+                padding-bottom: 3px !important;
                 color: #0369a1 !important;
             }
 
             .summary-text {
-                font-size: 0.84rem !important;
-                line-height: 1.45 !important;
+                font-size: 0.82rem !important;
+                line-height: 1.4 !important;
             }
 
-            .skill-group {
-                padding: 6px 10px !important;
-                margin-bottom: 6px !important;
-            }
-
-            .skill-group-content {
+            .skill-item {
                 font-size: 0.8rem !important;
+                padding: 2px 0 !important;
             }
 
             .exp-item {
-                margin-bottom: 12px !important;
-                padding-left: 14px !important;
+                margin-bottom: 10px !important;
+                padding-left: 12px !important;
                 page-break-inside: avoid;
             }
 
             .exp-role-company {
-                font-size: 0.9rem !important;
+                font-size: 0.88rem !important;
             }
 
             .exp-bullets li {
-                font-size: 0.82rem !important;
-                margin-bottom: 3px !important;
-                line-height: 1.4 !important;
+                font-size: 0.8rem !important;
+                margin-bottom: 2px !important;
+                line-height: 1.35 !important;
             }
 
-            .edu-box {
-                padding: 8px 12px !important;
+            .project-item-resume {
+                margin-bottom: 8px !important;
+                page-break-inside: avoid;
             }
 
-            .edu-degree {
+            .project-name-resume {
                 font-size: 0.86rem !important;
             }
 
-            .edu-inst {
+            .project-desc-resume {
                 font-size: 0.8rem !important;
+                line-height: 1.35 !important;
+            }
+
+            .edu-box {
+                padding: 6px 10px !important;
+            }
+
+            .edu-degree {
+                font-size: 0.84rem !important;
+            }
+
+            .edu-inst {
+                font-size: 0.78rem !important;
+            }
+
+            .cert-item {
+                font-size: 0.8rem !important;
+                padding: 4px 8px !important;
             }
 
             a {
@@ -520,7 +566,7 @@
     <div class="resume-action-bar">
         <div class="action-brand">
             <i class="fas fa-file-pdf"></i>
-            <span>Dandothkar Manik Prabhu — Resume</span>
+            <span>Manik Prabhu — Senior Software Engineer Resume</span>
         </div>
         <div class="action-buttons">
             <a href="index.html" class="btn btn-outline">
@@ -536,38 +582,34 @@
     <main class="resume-container">
         <!-- Header Section -->
         <header class="resume-header">
-            <div class="header-title-block">
-                <div>
-                    <h1 class="candidate-name">DANDOTHKAR MANIK PRABHU</h1>
-                    <div class="candidate-title">Senior Marketing & Delivery Manager | AI Solutions, B2B Growth & Multi-Cloud / DevOps Delivery Lead</div>
-                </div>
-            </div>
+            <h1 class="candidate-name">MANIK PRABHU</h1>
+            <div class="candidate-title">Senior Software Engineer | Senior AI & Agentic Systems Engineer | LLM Solutions Architect</div>
 
-            <!-- Clickable Interactive Icons & Badges -->
+            <!-- Clickable Interactive Contact & Badges -->
             <div class="contact-pills">
-                <a href="mailto:manikprabhu0098@gmail.com" class="contact-pill" title="Send Email">
-                    <i class="fas fa-envelope"></i>
-                    <span>manikprabhu0098@gmail.com</span>
-                </a>
+                <span class="contact-pill">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Boduppal, Hyderabad, India</span>
+                </span>
                 <a href="tel:+919666471196" class="contact-pill" title="Call Phone">
                     <i class="fas fa-phone-alt"></i>
                     <span>+91 96664 71196</span>
                 </a>
-                <span class="contact-pill">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Hyderabad, India</span>
-                </span>
+                <a href="mailto:manikprabhu0098@gmail.com" class="contact-pill" title="Send Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>manikprabhu0098@gmail.com</span>
+                </a>
                 <a href="https://www.linkedin.com/in/manik-prabhu-aa440b1a0" target="_blank" rel="noopener noreferrer" class="contact-pill linkedin" title="Open LinkedIn Profile">
                     <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn Profile</span>
+                    <span>LinkedIn</span>
                 </a>
                 <a href="https://github.com/manik305" target="_blank" rel="noopener noreferrer" class="contact-pill github" title="Open GitHub Profile">
                     <i class="fab fa-github"></i>
-                    <span>GitHub Profile</span>
+                    <span>GitHub</span>
                 </a>
-                <a href="index.html" target="_blank" rel="noopener noreferrer" class="contact-pill portfolio" title="Open Portfolio Website">
+                <a href="https://portfolie-website1.vercel.app/" target="_blank" rel="noopener noreferrer" class="contact-pill portfolio" title="Open Portfolio Website">
                     <i class="fas fa-globe"></i>
-                    <span>Portfolio Website</span>
+                    <span>portfolie-website1.vercel.app</span>
                 </a>
             </div>
         </header>
@@ -575,47 +617,39 @@
         <!-- Professional Summary -->
         <section class="resume-section">
             <h2 class="section-heading">
-                <i class="fas fa-user-tie"></i> Career Objective & Professional Summary
+                <i class="fas fa-user-tie"></i> Professional Summary
             </h2>
             <p class="summary-text">
-                Strategic and results-driven Senior Marketing & Delivery Manager with <strong>5.4+ years of cross-functional expertise</strong> driving enterprise B2B lead generation, demand generation, revenue acceleration, and scalable technical delivery across SaaS, Cloud, and Microsoft ecosystems. Proven record of generating predictable multi-million-dollar sales pipelines and <strong>closing nearly $1M in high-value enterprise contracts</strong>. Combines <strong>2.5+ years of intensive high-volume Cold Calling</strong>, advanced Email Marketing & Deliverability Administration (DNS authentication, SPF/DKIM/DMARC, inbox warm-up, spam/blacklist remediation), and SEO with deep technical engineering capabilities—architecting <strong>Agentic AI systems (LangGraph, LangChain, LangSmith, MCP)</strong>, developing <strong>Python/FastAPI microservices</strong>, setting up forward proxy architectures, and orchestrating multi-cloud deployments (AWS primary, GCP, Azure) via <strong>Docker, Kubernetes, and CI/CD pipelines</strong>. Adept at leading cross-functional squads, mapping client expectations, and translating complex technical solutions into high-converting business ROI.
+                Innovative Senior Software Engineer with <strong>5+ years of extensive software engineering experience</strong> specializing in building autonomous multi-agent systems, enterprise LLM architectures, and production-grade RAG pipelines. Proven expertise in orchestrating complex agentic workflows using <strong>LangChain, LangGraph, and Microsoft Agentic Framework (AutoGen / Semantic Kernel)</strong>. Deep background in Python backend engineering (FastAPI, Flask, Microservices), vector search, graph databases (Neo4j), and multi-cloud infrastructure (AWS & Azure with Terraform). Track record of transitioning state-of-the-art Generative AI research into scalable, fault-tolerant enterprise production systems.
             </p>
         </section>
 
-        <!-- Segregated Skills Matrix -->
+        <!-- Technical Skills Matrix -->
         <section class="resume-section">
             <h2 class="section-heading">
-                <i class="fas fa-layer-group"></i> Skills Matrix
+                <i class="fas fa-layer-group"></i> Technical Skills
             </h2>
             <div class="skills-grid-resume">
-                <!-- Marketing Skills -->
-                <div class="skill-group">
-                    <div class="skill-group-title">
-                        <i class="fas fa-bullseye"></i> Marketing & Demand Generation Skills:
-                    </div>
-                    <div class="skill-group-content">
-                        B2B Lead Generation (5.4+ Yrs), Cold Calling (2.5+ Yrs), Email Marketing, Email ID Administration & Domain Management, SPF / DKIM / DMARC DNS Authentication, Inbox Warm-up, Spam & Blacklist Remediation, Account Unblocking & Domain Reputation Management, Personalized LinkedIn Outreach, LinkedIn InMail Campaigns, Account-Based Marketing (ABM), SEO, Case Studies Analysis, Technical & Business Blog Writing, Critical Thinking, Client Expectation Mapping, Service Scope Roadmapping, Client Delivery Management, ICP Identification & Opportunity Staging.
-                    </div>
+                <div class="skill-item">
+                    • <strong>Agentic Frameworks & LLMs:</strong> LangGraph (StateGraph, Multi-Agent Supervisor), LangChain, Microsoft Agentic Framework (AutoGen, Semantic Kernel), CrewAI, LlamaIndex, OpenAI GPT-4o, Anthropic Claude, HuggingFace, Function Calling / Structured Outputs, Prompt Engineering
                 </div>
-
-                <!-- Technical Skills -->
-                <div class="skill-group">
-                    <div class="skill-group-title">
-                        <i class="fas fa-code"></i> Technical & Engineering Skills:
-                    </div>
-                    <div class="skill-group-content">
-                        Python, FastAPI (Async APIs), Machine Learning, Deep Learning, LangChain, LangGraph, LangSmith, Model Context Protocol (MCP), Prompt Engineering, Autonomous Agent Workflows, AWS (Core / EC2, S3, IAM, VPC), Google Cloud Platform (GCP Core), Microsoft Azure, Docker, Kubernetes (K8s), GitHub Actions CI/CD, Terraform (IaC), Forward Proxy & Network Routing, SQL, NoSQL Databases, MLOps, System Reliability, Deployment Stage Ops.
-                    </div>
+                <div class="skill-item">
+                    • <strong>RAG & Vector Search:</strong> GraphRAG, Hybrid Search (Dense + Sparse), Self-Querying, Re-ranking (Cohere), Contextual Compression, Chunking Strategies, Neo4j Knowledge Graphs
                 </div>
-
-                <!-- Tools & Platforms -->
-                <div class="skill-group">
-                    <div class="skill-group-title">
-                        <i class="fas fa-tools"></i> Tools & Platforms:
-                    </div>
-                    <div class="skill-group-content">
-                        ZoomInfo, Apollo.io, Lusha, N8N Workflows, Power BI, Advanced Excel, CRM Analytics, Salesforce, Microsoft Dynamics 365, Cloudera, VS Code, AntiGravity, Cline, Claude Code, Git, GitHub.
-                    </div>
+                <div class="skill-item">
+                    • <strong>Vector Databases & Storage:</strong> Pinecone, ChromaDB, FAISS, pgvector, Weaviate, Redis Vector
+                </div>
+                <div class="skill-item">
+                    • <strong>Backend & APIs:</strong> Python (5+ yrs), FastAPI, Flask, Microservices Architecture, Asynchronous Programming (asyncio), RESTful APIs, WebSockets, Server-Sent Events (SSE), Celery
+                </div>
+                <div class="skill-item">
+                    • <strong>Machine Learning & MLOps:</strong> Classical ML Algorithms (Supervised/Unsupervised, Scikit-Learn, XGBoost), LangSmith (Tracing & Evaluation), MLflow, Model Drift Monitoring, Guardrails AI
+                </div>
+                <div class="skill-item">
+                    • <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, DynamoDB, Redis, Neo4j (Cypher)
+                </div>
+                <div class="skill-item">
+                    • <strong>Cloud & DevOps (IaC):</strong> Microsoft Azure (Azure OpenAI, Container Apps), AWS (ECS, Lambda, S3, RDS), Terraform (IaC), Docker, Kubernetes, CI/CD (GitHub Actions)
                 </div>
             </div>
         </section>
@@ -630,97 +664,95 @@
             <div class="exp-item">
                 <div class="exp-header">
                     <div class="exp-role-company">
-                        Senior Marketing & Delivery Manager | 
+                        <span style="font-weight: 700;">Senior Software Engineer – AI Innovation & Agentic Systems</span> | 
                         <a href="https://www.digioclick.com/" target="_blank" rel="noopener noreferrer" class="exp-company-link">
                             Digio Click <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
                         </a>
+                        <span style="color: var(--text-subtle); font-weight: normal;">— Hyderabad, India</span>
                     </div>
-                    <div class="exp-date">05/2026 – Present</div>
+                    <div class="exp-date">May 2026 – Present</div>
                 </div>
                 <ul class="exp-bullets">
-                    <li>Direct technical delivery operations and marketing strategy, translating client business requirements into structured service deliverables and technical milestones.</li>
-                    <li>Design and deploy autonomous AI agent workflows using <strong>LangGraph, LangChain, LangSmith, and N8N</strong>, reducing turnaround cycle time by 35% for client reporting and high-intent lead qualification.</li>
-                    <li>Architect and maintain scalable microservices with <strong>FastAPI (Async APIs)</strong> and orchestrate containerized deployments on AWS and Azure using <strong>Docker, Kubernetes, and GitHub Actions CI/CD</strong> pipelines.</li>
-                    <li>Configure forward proxy networks and automated data extraction pipelines to ensure high-speed, secure, and uninterrupted sales intelligence gathering.</li>
-                    <li>Spearhead client delivery management, aligning scope roadmaps and client expectation mapping across cross-functional engineering and growth teams.</li>
+                    <li>Architect and deploy production-grade multi-agent systems using <strong>LangGraph and LangChain</strong>, automating enterprise workflows with collaborative agent teams (Planner, Executor, Critic, and Tool agents).</li>
+                    <li>Engineered resilient, stateful conversational agents with <strong>LangGraph StateGraph</strong>, checkpointing conversation histories, human-in-the-loop validation, and dynamic tool orchestration.</li>
+                    <li>Designed and implemented enterprise <strong>Hybrid RAG & GraphRAG pipelines</strong> combining Neo4j knowledge graphs with dense vector retrieval (Pinecone/ChromaDB), improving domain-specific contextual retrieval accuracy by <strong>42%</strong>.</li>
+                    <li>Built low-latency asynchronous API gateways using <strong>FastAPI</strong>, supporting streaming LLM responses via Server-Sent Events (SSE) and WebSockets with <strong>sub-200ms TTFT (Time To First Token)</strong>.</li>
+                    <li>Integrated <strong>LangSmith and OpenTelemetry</strong> for complete LLM observability, latency tracking, token consumption optimization, and automated regression testing across 500+ prompt test suites.</li>
+                    <li>Established semantic caching using <strong>Redis</strong>, slashing LLM inference API costs by <strong>35%</strong> while boosting response speeds for frequent customer queries.</li>
                 </ul>
             </div>
 
-            <!-- CompQsoft Digital - Manager -->
+            <!-- CompQsoft Digital -->
             <div class="exp-item">
                 <div class="exp-header">
                     <div class="exp-role-company">
-                        Senior Inside Sales Manager | 
+                        <span style="font-weight: 700;">Software Engineer II – Backend & Agentic AI</span> | 
                         <a href="https://compqsoft.com" target="_blank" rel="noopener noreferrer" class="exp-company-link">
                             CompQsoft Digital <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
                         </a>
+                        <span style="color: var(--text-subtle); font-weight: normal;">— Hyderabad, India</span>
                     </div>
-                    <div class="exp-date">01/2026 – 05/2026</div>
+                    <div class="exp-date">Oct 2024 – Apr 2026</div>
                 </div>
                 <ul class="exp-bullets">
-                    <li>Managed and mentored a dedicated 5-member team of Inside Sales Representatives, instituting outbound prospecting frameworks, objection-handling cadences, and lead nurturing standards.</li>
-                    <li>Drove team performance to consistently achieve a monthly target of 25 qualified leads, building a predictable top-of-funnel pipeline for enterprise Cloud & Microsoft services.</li>
-                    <li>Generated 2 to 3 high-value Sales Qualified Opportunities (SQOs) per quarter targeting enterprise C-suite decision-makers with verified purchasing intent.</li>
-                    <li>Administered email infrastructure across multiple sender domains: configured DNS authentication (SPF, DKIM, DMARC), managed domain warm-up schedules, and resolved spam/blacklist issues sustaining <strong>98%+ deliverability</strong>.</li>
-                    <li>Conducted in-depth case studies analysis and authored technical blogs optimized for SEO to drive organic inbound demand.</li>
+                    <li>Spearheaded research and proof-of-concept implementations of autonomous agent architectures utilizing <strong>Microsoft Agentic Framework (AutoGen / Semantic Kernel)</strong> and LangChain for enterprise clients.</li>
+                    <li>Developed resilient <strong>Python backend services</strong> and integrations tailored for enterprise ecosystems, connecting CRM, ERP, and operational field workflows.</li>
+                    <li>Architected and provisioned multi-cloud infrastructure across <strong>Microsoft Azure (Azure OpenAI Service, Azure Container Apps)</strong> and <strong>AWS</strong> utilizing <strong>Terraform (IaC)</strong> modules.</li>
+                    <li>Collaborated on high-level system design and architectural blueprints for industrial AI solutions (Oil & Gas / Energy operations), enabling predictive operational field assistance.</li>
+                    <li>Optimized database access layers and relational schema designs in <strong>PostgreSQL</strong>, implementing connection pooling and index optimizations to support high-concurrency LLM data ingestion.</li>
                 </ul>
             </div>
 
-            <!-- CompQsoft Digital - Executive -->
+            <!-- FunnL -->
             <div class="exp-item">
                 <div class="exp-header">
                     <div class="exp-role-company">
-                        Senior Inside Sales Executive | 
-                        <a href="https://compqsoft.com" target="_blank" rel="noopener noreferrer" class="exp-company-link">
-                            CompQsoft Digital <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
-                        </a>
-                    </div>
-                    <div class="exp-date">10/2024 – 12/2025</div>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Spearheaded outbound business development, strategic prospecting, and pipeline growth for enterprise IT, cloud infrastructure, and digital transformation solutions.</li>
-                    <li>Targeted high-potential utility, municipal infrastructure, and enterprise IT accounts, successfully positioning Microsoft-centric and next-gen technology services.</li>
-                    <li><strong>Closed two major enterprise projects with a combined contract value of nearly $1,000,000 ($1M)</strong>, exceeding key sales milestones and driving substantial revenue.</li>
-                    <li>Managed end-to-end sales cycles from cold discovery calls and product demos to objection handling, solution mapping, and contract handoffs.</li>
-                    <li>Built and presented comprehensive pipeline health dashboards and executive revenue reports using Power BI and CRM analytics.</li>
-                </ul>
-            </div>
-
-            <!-- Funnl - Team Lead -->
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div class="exp-role-company">
-                        Team Lead – B2B Growth & Inside Sales | 
+                        <span style="font-weight: 700;">Software Engineer I</span> (Oct 2021 – Oct 2024) &bull; <span style="font-weight: 600;">Associate Software Engineer</span> (Apr 2021 – Oct 2021) | 
                         <a href="https://funnl.ai" target="_blank" rel="noopener noreferrer" class="exp-company-link">
-                            Funnl (Funnl.ai) <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+                            FunnL <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
                         </a>
+                        <span style="color: var(--text-subtle); font-weight: normal;">— Hyderabad, India</span>
                     </div>
-                    <div class="exp-date">10/2021 – 10/2024</div>
+                    <div class="exp-date">Apr 2021 – Oct 2024 (3 yrs 7 mos)</div>
                 </div>
                 <ul class="exp-bullets">
-                    <li>Spearheaded outbound B2B sales development campaigns leveraging a hybrid model of AI-driven lead intelligence and human-in-the-loop inside sales execution.</li>
-                    <li>Managed and mentored a high-performing squad of nearly 10 team members, coaching them on advanced prospecting, cold calling discipline, and email marketing optimization.</li>
-                    <li><strong>Led 2.5+ years of intensive B2B cold calling campaigns</strong>, generating 3–4 verified high-intent leads daily and exceeding monthly pipeline quotas by 120%.</li>
-                    <li>Owned end-to-end client onboarding for new B2B customers, defining target profiles (ICP), configuring campaign parameters, and setting up data extraction pipelines.</li>
-                    <li>Executed rigorous account data extraction and prospect enrichment utilizing ZoomInfo, Apollo.io, and Lusha to deliver verified enterprise lead datasets.</li>
+                    <li>Designed, developed, and maintained scalable microservices using <strong>Python, FastAPI, and Flask</strong>, serving high-volume data pipelines with <strong>99.9% uptime</strong>.</li>
+                    <li>Modeled relational (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis) schemas; incorporated <strong>Neo4j graph databases</strong> to model complex entity relationship graphs.</li>
+                    <li>Developed distributed background task queues using <strong>Celery and Redis</strong>, processing <strong>100,000+ asynchronous events daily</strong> without data loss.</li>
+                    <li>Containerized microservices using <strong>Docker</strong> and deployed container clusters on AWS (ECS, EC2, RDS, S3, API Gateway) with automated CI/CD pipelines via GitHub Actions.</li>
+                    <li>Built unit and integration test suites using <strong>pytest</strong>, maintaining code test coverage above <strong>90%</strong> and enforcing strict PEP-8 standards through automated linters.</li>
                 </ul>
             </div>
+        </section>
 
-            <!-- Funnl - Associate Trainee -->
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div class="exp-role-company">
-                        Associate Trainee | 
-                        <a href="https://funnl.ai" target="_blank" rel="noopener noreferrer" class="exp-company-link">
-                            Funnl (Funnl.ai) <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
-                        </a>
-                    </div>
-                    <div class="exp-date">04/2021 – 10/2021</div>
+        <!-- Key Projects -->
+        <section class="resume-section">
+            <h2 class="section-heading">
+                <i class="fas fa-microchip"></i> Key Projects
+            </h2>
+            <div class="project-item-resume">
+                <div class="project-name-resume">
+                    • Autonomous Enterprise Multi-Agent Research & Execution Swarm
                 </div>
-                <ul class="exp-bullets">
-                    <li>Mastered end-to-end B2B sales cycles, lead scoring methodologies, and Ideal Customer Profile (ICP) identification across mid-market and enterprise verticals.</li>
-                    <li>Conceptualized and mapped disparate data sources (CRM, marketing, and analytical APIs) into unified data streams to ensure data integrity and single-source-of-truth accuracy.</li>
-                </ul>
+                <div class="project-desc-resume">
+                    Built a collaborative agent network with LangGraph and AutoGen capable of autonomously browsing the web, executing code in sandboxes, querying internal SQL/NoSQL databases, and generating executive reports.
+                </div>
+            </div>
+            <div class="project-item-resume">
+                <div class="project-name-resume">
+                    • GraphRAG Enterprise Knowledge Assistant
+                </div>
+                <div class="project-desc-resume">
+                    Built a hybrid retrieval system coupling Neo4j entity graphs with vector embeddings, eliminating hallucinations in multi-hop analytical queries.
+                </div>
+            </div>
+            <div class="project-item-resume">
+                <div class="project-name-resume">
+                    • Intelligent Document Parsing & Extraction Pipeline
+                </div>
+                <div class="project-desc-resume">
+                    Built an asynchronous document extraction engine combining PyMuPDF, LangChain chunking, and LLM structured outputs to process unstructured business contracts.
+                </div>
             </div>
         </section>
 
@@ -732,13 +764,30 @@
             <div class="edu-grid-resume">
                 <div class="edu-box">
                     <div class="edu-degree">Master of Business Administration (MBA) – Marketing</div>
-                    <div class="edu-inst">Malla Reddy College of Engineering and Technology, Hyderabad</div>
+                    <div class="edu-inst">Malla Reddy College of Engineering & Technology, Hyderabad</div>
                     <div class="edu-meta">2019 – 2021 | CGPA: 7.45</div>
                 </div>
                 <div class="edu-box">
-                    <div class="edu-degree">Bachelor of Commerce in Computer Applications – B.Com (CA)</div>
+                    <div class="edu-degree">Bachelor of Commerce (Computer Applications) - B.Com (CA)</div>
                     <div class="edu-inst">Sardar Patel Degree College, Hyderabad</div>
                     <div class="edu-meta">2016 – 2019 | CGPA: 7.42</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Honors Section -->
+        <section class="resume-section">
+            <h2 class="section-heading">
+                <i class="fas fa-award"></i> Certifications & Honors
+            </h2>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Microsoft Certified: AI Skills Fest 2026 (Microsoft)</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Microsoft Security Copilot Specialist</span>
                 </div>
             </div>
         </section>

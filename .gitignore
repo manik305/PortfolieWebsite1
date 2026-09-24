@@ -1,8 +1,19 @@
-resume_extracted.txt
-resume_full.txt
-resume_links.txt
-resume_link.txt
-resume_summary.txt
-note.txt
-ml_suite_code.py
-resume_*.txt
+# Documents, PDFs, Word, Text and Markdown files (Excluded from GitHub)
+*.pdf
+*.docx
+*.doc
+*.md
+*.txt
+*.py
+
+# Generation artifacts & icons
+01_Senior_*.html
+assets/
+generate_documents.py
+test_print.pdf
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

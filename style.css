@@ -944,6 +944,103 @@ section {
     gap: 15px;
 }
 
+/* Multi-Projects Grid */
+.projects-multi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-card-mini {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+.project-card-mini:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-glass-bright);
+    box-shadow: 0 12px 35px rgba(0, 240, 255, 0.12);
+}
+.project-card-mini .project-tag {
+    margin-bottom: 12px;
+}
+.project-card-mini .project-title {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+.project-card-mini .project-desc {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+.tech-badge {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-glass);
+    border-radius: 100px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Certifications Grid */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+.cert-card {
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: var(--transition-smooth);
+}
+.cert-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.15);
+}
+.cert-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: var(--radius-md);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--whatsapp-green);
+    flex-shrink: 0;
+}
+.cert-info h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+.cert-info p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
 /* --- Section: Education --- */
 .education-grid {
     display: grid;
